@@ -1,0 +1,20 @@
+// fonts
+$primary-font: 'Lato', sans-serif;
+$title-font: 'Raleway', sans-serif;
+
+// colors
+$white: #fff;
+$gray: #777;
+$black: #000;
+
+//shadows
+$shadow: 2px 2px 10px #00000042;
+
+// breack points
+$site-breakpoints: (
+    "sm": "20em", //320px
+    "md": "48em", //768px
+    "lg": "64em", //1024px
+    "xl": "75em", //1200px
+    "xx-l": "87.5em" //1400px
+);

@@ -1,0 +1,19 @@
+{
+  "short_name": "myApp",
+  "name": "myApp",
+  "icons": [
+    {
+      "src": "./img/logo.png",
+      "sizes": "64x64 32x32 24x24 16x16 192x192 512x512",
+      "type": "image/x-icon"
+    }
+  ],
+  "permissions": [
+    "storage", "alarms"
+  ],
+  "start_url": "/index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "orientation": "portrait",
+  "background_color": "#ffffff"
+}
