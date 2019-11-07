@@ -54,12 +54,14 @@ module.exports = {
         ],
       },
       {
-        test: /\.ttf$/,
+        test: /\.(jpg|png|gif|jpeg)$/,
         use: [
           {
-            loader: 'ttf-loader',
+            loader: 'file-loader',
             options: {
-              name: './font/[hash].[ext]',
+              name: '[name].[ext]',
+              outputPath: 'img/',
+              useRelativePath: true
             },
           },
         ],

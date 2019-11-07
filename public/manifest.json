@@ -3,7 +3,7 @@
   "name": "myApp",
   "icons": [
     {
-      "src": "./img/logo.png",
+      "src": "./img/logo.jpg",
       "sizes": "64x64 32x32 24x24 16x16 192x192 512x512",
       "type": "image/x-icon"
     }
