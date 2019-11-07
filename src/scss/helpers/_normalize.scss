@@ -346,3 +346,22 @@ template {
 [hidden] {
   display: none;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: none;
+  height: 30px;
+  overflow: hidden;
+  width: 30px;
+}

@@ -4,6 +4,7 @@ import Task from './components/task';
 import Menu from './components/menu';
 import Form from './components/form';
 import Modal from './components/modal';
+import Empty from './components/empty';
 
 class App extends React.Component {
 	constructor(props) {
@@ -133,6 +134,12 @@ class App extends React.Component {
 		});
 	}
 
+	newEmpty() {
+		return (
+			<Empty key={`empty${this.newId()}`} addNewTask={this.changeView.bind(this)} />
+		)
+	}
+
 	renderForm() {
 		return (
 			<Form 
@@ -156,9 +163,13 @@ class App extends React.Component {
 			}
 			tasks.push(this.renderTask(dataTask));
 		});
-		return (
-			tasks
-		)
+		if (tasks.length === 0) {
+			return this.newEmpty();
+		} else {
+			return (
+				tasks
+			)
+		}
 	}
 
 	renderPendingTasks() {
@@ -176,9 +187,13 @@ class App extends React.Component {
 				tasks.push(this.renderTask(dataTask));
 			}
 		});
-		return (
-			tasks
-		)
+		if (tasks.length === 0) {
+			return this.newEmpty();
+		} else {
+			return (
+				tasks
+			)
+		}
 	}
 
 	renderCompletedTasks() {
@@ -196,9 +211,13 @@ class App extends React.Component {
 				tasks.push(this.renderTask(dataTask));
 			}
 		});
-		return (
-			tasks
-		)
+		if (tasks.length === 0) {
+			return this.newEmpty();
+		} else {
+			return (
+				tasks
+			)
+		}
 	}
 
 	changeView(view) {

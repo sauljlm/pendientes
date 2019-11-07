@@ -1,20 +1,19 @@
 // fonts
 $primary-font: 'Lato', sans-serif;
-$title-font: 'Raleway', sans-serif;
-
+$secundaryfont: 'Anton', sans-serif;
 // colors
 $white: #fff;
 $gray: #777;
 $black: #000;
+$light-blue: #00EAFF;
+$yellow: #FFE000;
+$pending-color: #00EAFF;
 
-//shadows
-$shadow: 2px 2px 10px #00000042;
+$main-bk: #5F05AB;
+$shadow: rgba(0, 0, 0, 0.2);
 
 // breack points
-$site-breakpoints: (
-    "sm": "20em", //320px
-    "md": "48em", //768px
-    "lg": "64em", //1024px
-    "xl": "75em", //1200px
-    "xx-l": "87.5em" //1400px
-);
+$breakpoint-sm: 320px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1024px;

@@ -1,10 +1,14 @@
 @import 'helpers/normalize.scss';
 @import 'helpers/variables';
-@import 'helpers/mixins.scss';
 @import 'helpers/general.scss';
 
 @import 'patterns/buttons.scss';
 
+@import 'components/header';
 @import 'components/menu';
+@import 'components/form';
+@import 'components/modal';
+@import 'components/task';
+@import 'components/empty';
 
 @import 'pages/app-wrapper';

@@ -1,0 +1,57 @@
+.hamburguer {
+  background-color: transparent;
+  display: block;
+  height: 11%;
+  position: fixed;
+  width: 100%;
+  z-index: 4;
+}
+
+.hamburguer__btn { 
+  margin-top: 3%;
+  position: fixed;
+  width: 30px;
+  z-index: 5;
+
+  &:hover .line-top {
+    transform: translateY(-4px);
+  }
+  &:hover .line-bottom {
+    transform: translateY(4px);
+  }
+  path {
+    fill: transparent;
+    stroke-width: 2px;
+    stroke: $white;
+    transition: all 500ms cubic-bezier(.2,0,0,1);
+  }
+}
+
+.hamburguer__btn--active {
+  path {
+    stroke: $white;
+  }
+  .line-center {
+    transform: translateX(-50px);
+  }
+  .line-top {
+    transform: rotate(45deg) translateX(6px) translateY(-9px);
+  }
+  .line-bottom {
+    transform: rotate(-45deg) translateX(-15px) translateY(0px);
+  }
+}
+
+.header {
+  background-color: $main-bk;
+  height: 60px;
+  position: fixed;
+  transform: translateX(-10px);
+  width: 100%;
+}
+
+.header__title { 
+  position: fixed;
+  right: 5%;
+  top: 20%;
+}

@@ -1,0 +1,88 @@
+.task {
+  background-color: $black;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: $yellow;
+  margin: 20px auto;
+  
+  @media (min-width: $breakpoint-md) {
+    float: left;
+    margin: 1.5%;
+    width: 30%;
+  }
+
+  h2 {
+    color: $black;
+    margin-bottom: 0;
+  }
+  p {
+    margin-top: 5px;
+  }
+}
+
+.task__btn-container {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: space-around;
+
+  button {
+    width: 35px;
+    height: 35px;
+    transition: 0.5s;
+
+    &:active {
+      transform: translateY(10px);
+      transition: 0.2s;
+    }
+    &:focus {
+      outline: $black;
+    }
+  }
+}
+
+.task__container-date {
+  width: 50%;
+}
+
+.task__container-matter {
+  float: left;
+  width: 50%;
+}
+
+.task__content {
+  padding: 10px;
+}
+
+.task__desc-container {
+  grid-area: desc;
+  height: auto;
+  word-break: break-word;
+}
+
+.task__header {
+  align-items: center;
+  background-color: $pending-color;
+  border-radius: 15px 15px 0 0 ;
+  color: $black;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.task__header--done {
+  background-color: $white;
+}
+
+.task__btn-complete {
+  background-image: url('../img/done.png');
+}
+
+.task__btn-delete {
+  background-image: url('../img/delete.png');
+}
+
+.task__title {
+  font-family: $secundaryfont;
+}

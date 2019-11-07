@@ -1,0 +1,49 @@
+.empty {
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20% auto;
+}
+
+.empty__image {
+  margin: 0 auto;
+  max-width: 80%;
+  transform: translateX(20px);
+}
+
+.empty__title {
+  color: $white;
+  font-size: 32px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.empty__messaje {
+  font-size: 20px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.empty__btn {
+  background-color: $white;
+  border-radius: 3px;
+  border: 2px solid $black;
+  box-shadow: 0 3px 6px 0 $shadow;
+  color: $black;
+  font-family: $secundaryfont;
+  height: 50px;
+  margin: 0 auto;
+  padding: 10px 0;
+  transition: 0.5s;
+  width: 50%;
+
+  &:hover,
+  &:active {
+    background-color: $black;
+    border: 2px solid $white;
+    box-shadow: 0 6px 6px 0 $shadow;
+    color: $white;
+    transition: 0.5s;
+  }
+}
