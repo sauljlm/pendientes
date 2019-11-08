@@ -11,7 +11,7 @@ class App extends React.Component {
 		super(props);
 
 		this.state = {
-    	url : 'http://localhost:1234',
+    	url : 'https://pendientes-dani.herokuapp.com/',
 			view : "allTask",
 			modal: null,
 			tasks: []
