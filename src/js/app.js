@@ -11,7 +11,7 @@ class App extends React.Component {
 		super(props);
 
 		this.state = {
-    	url : 'https://pendientes-dani.herokuapp.com/',
+    	url : 'https://pendientes-dani.herokuapp.com',
 			view : "allTask",
 			modal: null,
 			tasks: []
@@ -30,6 +30,7 @@ class App extends React.Component {
 		await this.setState({
 			tasks: data
 		});
+		console.log(this.state.tasks)
 	}
 
 	deleteToDb(Id) {
@@ -117,8 +118,6 @@ class App extends React.Component {
 	deleteTask(index) {
 		const currentTasks = this.state.tasks;
 		const id = currentTasks[index]._id;
-		currentTasks.splice(index, 1);
-		this.setState({task: currentTasks});
 		this.deleteToDb(id);
 	}
 
