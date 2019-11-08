@@ -1,6 +1,6 @@
 {
-  "short_name": "myApp",
-  "name": "myApp",
+  "short_name": "Pendientes",
+  "name": "Pendientes",
   "icons": [
     {
       "src": "./img/logo.png",
