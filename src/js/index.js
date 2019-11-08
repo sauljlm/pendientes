@@ -10,6 +10,7 @@ import '../img/delete.png';
 import '../img/sinTareas.png';
 
 import '../scss/style.scss';
+import './registerServiceWorker';
 
 function startRender() {
     ReactDOM.render(<App />,document.getElementById('root'));
